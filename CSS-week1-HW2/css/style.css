@@ -1,0 +1,41 @@
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+}
+
+/* Existing li styling from Homework 1 (commented out for Homework 2).
+   Note: the Homework 1 stylesheet had no li rule, so this is a placeholder.
+li {
+  display: inline-block;
+  margin-right: 1em;
+}
+*/
+
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* descendant selector: only the image inside the nav */
+nav img {
+  width: 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 30px;
+}
+
+/* descendant selector: only images inside .grid (not .flex) */
+.grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
